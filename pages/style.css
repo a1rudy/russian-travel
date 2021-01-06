@@ -184,7 +184,8 @@ time, mark, audio, video, section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(7 1fr);
-  grid-gap: 40px;
+  grid-row-gap: 48px;
+  grid-column-gap: 40px;
   position: relative;
 }
 
@@ -354,7 +355,15 @@ time, mark, audio, video, section {
 
   .places {
     max-width: 928px;
-    grid-gap: 32px;
+    grid-column-gap: 32px;
+  }
+
+  .cover__title {
+    padding-top: 17%;
+  }
+
+  .cover__subtitle {
+    padding-bottom: 17%;
   }
 
 }
@@ -404,7 +413,7 @@ time, mark, audio, video, section {
   }
   
   .places {
-    grid-gap: 28px;
+    grid-column-gap: 28px;
     padding-bottom: 90px;
   }
   
@@ -433,6 +442,15 @@ time, mark, audio, video, section {
 }
 
 @media screen and (max-width: 767px) {
+  
+  .photo-grid {
+    grid-template-columns: repeat(2, 321px);
+    grid-gap: 12px;
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
   
   .photo-grid {
     grid-template-columns: repeat(1, 352px);
