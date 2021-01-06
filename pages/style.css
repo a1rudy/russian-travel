@@ -1,4 +1,4 @@
-/* .html, body, div, span, applet, object, iframe,
+.html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -12,7 +12,7 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video, section {
   border: 1px solid red;
-} */
+}
 
 .body {
   background-color: #2A2C2F;
@@ -164,7 +164,8 @@ time, mark, audio, video, section {
 
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 284px);
+  grid-template-columns: repeat(4, minmax(min-content, max-content));
+  /* grid-template-columns: repeat(auto-fit, 284px); */
   justify-content: center;
   grid-gap: 16px;
   max-width: calc((286px + 16px)*4 - 16px);
@@ -328,11 +329,11 @@ time, mark, audio, video, section {
   margin: 0;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1194px) {
     
   .photo-grid {
     max-width: 988px;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
     justify-content: center;
     grid-gap: 14px;
   }
@@ -380,9 +381,6 @@ time, mark, audio, video, section {
   }
 
   .photo-grid {
-    grid-template-columns: repeat(2, 352px);
-    justify-content: center;
-    grid-gap: 16px;
     margin-right: 24px;
     margin-left: 24px;
   }
@@ -395,6 +393,15 @@ time, mark, audio, video, section {
  .footer {
     margin-right: 24px;
     margin-left: 24px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  
+  .photo-grid {
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-gap: 16px;
   }
 
 }
@@ -441,27 +448,10 @@ time, mark, audio, video, section {
 
 }
 
-@media screen and (max-width: 767px) {
-  
-  .photo-grid {
-    grid-template-columns: repeat(2, 321px);
-    grid-gap: 12px;
-  }
-  
-}
-
-@media screen and (max-width: 700px) {
-  
-  .photo-grid {
-    grid-template-columns: repeat(1, 352px);
-    grid-gap: 12px;
-  }
-  
-}
-
 @media screen and (max-width: 667px) {
   
   .lead__title {
+    max-width: 528px;
     font-size: 70px;
     line-height: 68px;
     }
@@ -477,6 +467,7 @@ time, mark, audio, video, section {
   .footer__copyright {
     padding-top: 48px;
   }
+
 }
 
 @media screen and (max-width: 528px) {
@@ -516,7 +507,7 @@ time, mark, audio, video, section {
   }
 
   .photo-grid {
-    grid-template-columns: repeat(1, 288px);
+    grid-template-columns: repeat(1, minmax(min-content, max-content));
     grid-gap: 12px;
     margin-right: 16px;
     margin-left: 16px;
