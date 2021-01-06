@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Inter-Black';
+  font-style:  normal;
+  src: 
+  url("/vendor/Inter-Black.woff2") format("woff2"),
+  url("/vendor/Inter-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter-Thin';
+  font-style:  normal;
+  src: 
+  url("/vendor/Inter-Thin.woff2") format("woff2"),
+  url("/vendor/Inter-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter-Light';
+  font-style:  normal;
+  src: 
+  url("/vendor/Inter-Light.woff2") format("woff2"),
+  url("/vendor/Inter-Light.woff") format("woff");
+}
