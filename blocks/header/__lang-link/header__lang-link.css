@@ -1,0 +1,19 @@
+.header__lang-link {
+  list-style: none;
+  display: flex;
+  color: #fff;
+}
+
+.header__lang-link:hover {
+  color: #aaa;
+}
+
+
+@media screen and (max-width: 528px) {
+    
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+}

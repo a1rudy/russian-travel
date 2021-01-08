@@ -1,0 +1,25 @@
+.places__parahraph {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+
+  .places__parahraph {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 528px) {
+
+  .places__parahraph {
+    margin: 0 16px 25px;
+  }
+
+  .places__parahraph:last-child {
+    margin: 0 16px;
+  }
+
+}
