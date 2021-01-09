@@ -1,12 +1,12 @@
-.places__image {
+.place__image {
   grid-column: 1/2;
-  grid-row: 3/6;
+  grid-row: 2/3;
   max-width: 100%;
 }
 
 @media screen and (max-width: 528px) {
   
-  .places__image {
+  .place__image {
     margin-bottom: 32px;
   }
 

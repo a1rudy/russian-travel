@@ -1,13 +1,16 @@
 .header__lang-link {
   list-style: none;
+  text-decoration: none;
   display: flex;
   color: #fff;
+  padding: 0;
+  margin-left: 18px;
 }
 
 .header__lang-link:hover {
   color: #aaa;
+  transition: color .2s linear 0s;
 }
-
 
 @media screen and (max-width: 528px) {
     
