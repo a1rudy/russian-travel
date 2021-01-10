@@ -1,4 +1,4 @@
-.place__parahraph {
+.place__paragraph {
   margin: 0 0 25px 0;
   font-size: 18px;
   line-height: 1.6;
@@ -6,13 +6,13 @@
   grid-row: 2/3;
 }
 
-.place__parahraph:last-child {
+.place__paragraph:last-child {
   margin: 0;
 }
 
 @media screen and (max-width: 768px) {
 
-  .place__parahraph {
+  .place__paragraph {
     font-size: 16px;
   }
 
@@ -20,11 +20,11 @@
 
 @media screen and (max-width: 528px) {
 
-  .place__parahraph {
+  .place__paragraph {
     margin: 0 16px 25px;
   }
 
-  .place__parahraph:last-child {
+  .place__paragraph:last-child {
     margin: 0 16px;
   }
 
